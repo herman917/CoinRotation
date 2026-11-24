@@ -51,9 +51,27 @@ body {
   font-size: 0.95rem;
 }
 
+.top-controls {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: stretch;
+}
+
+.coin-select-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.coin-select-grid .field-group {
+  margin-bottom: 0;
+}
+
 .main-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(300px, 1fr);
+  grid-template-columns: minmax(0, 1.65fr) minmax(280px, 1fr);
   gap: 20px;
   align-items: start;
 }
@@ -326,6 +344,15 @@ input[type='range'] {
 }
 
 @media (max-width: 920px) {
+  .top-controls {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .coin-select-grid {
+    grid-template-columns: 1fr;
+  }
+
   .main-layout {
     grid-template-columns: 1fr;
   }
