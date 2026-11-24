@@ -63,6 +63,10 @@
         <section class="canvas-panel" aria-label="硬幣滾動模擬畫布">
           <div class="canvas-wrapper">
             <canvas id="simCanvas"></canvas>
+            <div class="canvas-counter" aria-live="polite">
+              <span class="counter-label">目前累積轉動</span>
+              <span id="rotationCounter" class="counter-value">0.00 圈</span>
+            </div>
             <div class="canvas-hint">可直接拖曳外圍硬幣，或使用上方滑桿與播放控制</div>
           </div>
           <div class="legend-bar">
@@ -93,10 +97,6 @@
               <div id="formulaReadout" class="formula-text">
                 1 (公轉) + (1.00 ÷ 1.00) = <strong>2.00 圈</strong>
               </div>
-            </div>
-            <div class="counter-box">
-              <span class="counter-label">目前累積轉動</span>
-              <span id="rotationCounter" class="counter-value">0.00 圈</span>
             </div>
           </div>
         </aside>

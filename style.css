@@ -108,6 +108,21 @@ body {
   cursor: grabbing;
 }
 
+.canvas-counter {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+  pointer-events: none;
+}
+
 .canvas-hint {
   position: absolute;
   left: 12px;
@@ -298,7 +313,7 @@ input[type='range'] {
   border: 1px solid #d7e3ff;
   border-radius: 10px;
   padding: 12px 14px;
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 
 .formula-label {
@@ -320,24 +335,14 @@ input[type='range'] {
   font-size: 1.05rem;
 }
 
-.counter-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  background: var(--surface-alt);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 12px 14px;
-}
-
 .counter-label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-muted);
 }
 
 .counter-value {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
   color: var(--danger);
